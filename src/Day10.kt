@@ -2,6 +2,8 @@ import kotlin.io.path.Path
 import kotlin.io.path.readText
 
 fun main() {
+    data class Point(val x: Int, val y: Int)
+
     val input = Path("inputs/10.txt").readText().trim()
 
     fun solve(countDistinct: Boolean) {
@@ -42,4 +44,3 @@ fun main() {
     solve(true)
 }
 
-private data class Point(val x: Int, val y: Int)
